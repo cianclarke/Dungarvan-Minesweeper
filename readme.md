@@ -3,7 +3,7 @@ Introduction
   
 “Dungarvan Minesweeper” is a game based in Dungarvan made in a 3D environment, which can be interacted with and walked through.  
 
-![Dungarvan Minesweeper](https://raw.github.com/cianclarke/Dungarvan-Minesweeper/master/docs/cover.png "Dungarvan Minesweeper")
+![Dungarvan Minesweeper](https://raw.github.com/cianclarke/Dungarvan-Minesweeper/master/docs/cover.jpg "Dungarvan Minesweeper")
   
 Features
 ========
