@@ -3,7 +3,7 @@ Introduction
   
 “Dungarvan Minesweeper” is a game based in Dungarvan made in a 3D environment, which can be interacted with and walked through.  
 
-![Dungarvan Minesweeper](images/cover.png "Dungarvan Minesweeper")
+![Dungarvan Minesweeper](https://raw.github.com/cianclarke/Dungarvan-Minesweeper/master/docs/cover.png "Dungarvan Minesweeper")
   
 Features
 ========
@@ -29,10 +29,10 @@ Each Level has one or more landmines “hidden” static in the town.
 The main viewport of the game is of course 3D by nature, using a perspective viewport. The user starts in a third person view, but can switch to first person. ‘V’ toggles this view.   
 The largest 3D object in the game is the town, created using Google Sketchup. Some reference was made to a town map, but the model is not to perfect scale. 
   
-![Sketchup1](images/sketchup1.png "Google Sketchup showing a map of the town")
+![Sketchup1](https://raw.github.com/cianclarke/Dungarvan-Minesweeper/master/docs/sketchup1.png "Google Sketchup showing a map of the town")
   
 Every visible building face in the model has a texture from Google Streetview  
-![Sketchup1](images/sketchup2.png "Google Sketchup showing a detail shot of the town")
+![Sketchup1](https://raw.github.com/cianclarke/Dungarvan-Minesweeper/master/docs/sketchup2.png "Google Sketchup showing a detail shot of the town")
   
 Some barriers placed at street level limit roaming through the town map’s incomplete sections. These, along with the street lamps visible along the quays are the only 3D models in the level that have been imported from the Google 3D Warehouse. 
   
@@ -42,12 +42,12 @@ OpenGL Lighting
 ---------------
 The main lighting element of the game is an imitation of sunlight. In creating this, OpenGL’s light 0 was used. This was given specular and diffuse properties, and a position. Then, global ambient, specular, diffuse and shininess properties are set.   
 Finally, level 2 onwards introduces fog, using OpenGL’s ‘glFog’ functions.  
-![Fog](images/fog.png "Fog")  
+![Fog](https://raw.github.com/cianclarke/Dungarvan-Minesweeper/master/docs/fog.png "Fog")  
   
 Skybox
 ------
 A large cube was created for the purpose of a ‘skybox’, a large texture mapped object drawn around the camera to imitate being inside a sky, with sea on it’s floor.  
-![Skybox](images/skybox.png "Skybox")  
+![Skybox](https://raw.github.com/cianclarke/Dungarvan-Minesweeper/master/docs/skybox.png "Skybox")  
 The texture for this is freeware obtained from:  
 http://www.hazelwhorley.com/textures.html  
 The tutorial used to aide in the construction of the skybox is:  
@@ -70,7 +70,7 @@ The NPC’s bounce around the bounding box of the map, introducing another eleme
 Bullets
 -------
 The concept of bullets being fired sounds conceptually quite simple but took two days to implement correctly.  
-![Bullets](images/bullets.png "Bullets")  
+![Bullets](https://raw.github.com/cianclarke/Dungarvan-Minesweeper/master/docs/bullets.png "Bullets")  
 The concept was that a small round sphere would be sent from the camera’s current coordinates out into 3D space at some speed. This was first implemented for one bullet using a C++ Class to track it’s whereabouts. The bullet checks for collision with NPC’s for every step it moves.   
 The limitation of only having one bullet was resolved by creating a (predetermined size, 100 at present) array of bullet objects, which become instantiated as required. This limitation has not proved a problem in gameplay, but could be removed by making the array a vector instead.  
 The bullet only moves through the X and Z axis, so does not vary in height – this was not a technical limitation, as the implementation would not have proved difficult – rather it was determined to suit the third person view better, and to make the game easier to play.   
